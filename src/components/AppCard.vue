@@ -4,6 +4,7 @@ export default {
     data(){
         return{
             contentMaxLength: 50,
+            baseUrlProject: "http://127.0.0.1:8000/admin/projects/"
         }
     },
     props:{
@@ -26,7 +27,7 @@ export default {
         <h5 class="card-title">{{project.title}}</h5>
         <h6 class="card-subtitle mb-2 text-muted">{{project.slug}}</h6>
         <p class="card-text">{{contentPreview(project.content)}}</p>
-        <a class="btn btn-primary" href="">Leggi di più</a>
+        <a class="btn btn-primary" :href="baseUrlProject + project.slug">Leggi di più</a>
     </div>
 </div>
 </template>
