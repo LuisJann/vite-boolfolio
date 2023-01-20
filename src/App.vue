@@ -1,11 +1,11 @@
 <script>
-import AppMain from './components/AppMain.vue';
+// import AppMain from './components/AppMain.vue';
 import AppHeader from './components/AppHeader.vue';
 
 export default{
   name:'App',
   components: {
-    AppMain,
+    // AppMain,
     AppHeader,
   }
 }
@@ -13,7 +13,8 @@ export default{
 
 <template>
 <AppHeader/>
-<AppMain></AppMain>
+<router-view></router-view>
+<!-- <AppMain></AppMain> -->
 </template>
 
 <style lang="scss">

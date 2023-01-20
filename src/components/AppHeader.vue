@@ -14,6 +14,8 @@ export default {
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/admin">Admin</a>
+        <router-link class="nav-link active" aria-current="page" :to="{name: 'home' }">Home</router-link>
+        <router-link class="nav-link active" aria-current="page" :to="{name: 'about' }">About Us</router-link>
       </div>
     </div>
   </div>
